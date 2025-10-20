@@ -2,7 +2,7 @@ from flask import Flask, request, render_template_string
 
 from calculate import Calculations 
 
-app = Flask(__name__) 
+app2 = Flask(__name__) 
 
  
 
@@ -66,7 +66,7 @@ TEMPLATE = """
 
  
 
-@app.route("/", methods=["GET", "POST"]) 
+@app2.route("/", methods=["GET", "POST"]) 
 
 def home(): 
 
@@ -106,4 +106,4 @@ def home():
 
 if __name__ == "__main__": 
 
-    app.run(host="0.0.0.0", port=5000) 
+    app2.run(host="0.0.0.0", port=5000) 
